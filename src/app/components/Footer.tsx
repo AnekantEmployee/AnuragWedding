@@ -28,9 +28,12 @@ export function Footer() {
         {/* Date */}
         <p
           className="text-2xl mb-6 tracking-wider"
-          style={{ color: 'var(--gold)', fontFamily: "'Cormorant Garamond', serif" }}
+          style={{
+            color: "var(--gold)",
+            fontFamily: "'Cormorant Garamond', serif",
+          }}
         >
-          {t('19 · April · 2026', '१९ · अप्रैल · २०२६')}
+          {t("19 · April · 2026", "१९ · अप्रैल · २०२६")}
         </p>
 
         {/* Quote */}
@@ -38,31 +41,36 @@ export function Footer() {
           className="text-xl md:text-2xl italic mb-8 opacity-80"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          {t('"Two souls, one destiny"', '"दो आत्माएँ, एक नियति"')}
+          {t('"And so the adventure begins."', '"और अब एक नया सफर शुरू होता है।"')}
         </p>
 
         {/* Divider */}
-        <div className="w-32 h-px mx-auto mb-6" style={{ background: 'var(--border)' }} />
+        <div
+          className="w-32 h-px mx-auto mb-6"
+          style={{ background: "var(--border)" }}
+        />
 
         {/* Venue Credit */}
         <p className="text-sm opacity-60 mb-3">
-          {t('Venue:', 'स्थान:')}
-          {' '}
+          {t("Venue:", "स्थान:")}{" "}
           <a
-            href="https://www.dastoorgarden.com/garden"
+            href="https://maps.app.goo.gl/cq28nmGoaeTPfH1SA"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:opacity-100 transition-opacity underline"
-            style={{ color: 'var(--rose)' }}
+            style={{ color: "var(--rose)" }}
           >
-            Dastoor Garden, Indore
+            Dastoor Marriage Garden, Indore
           </a>
         </p>
 
         {/* Made with love */}
         <p className="text-sm opacity-60 flex items-center justify-center gap-2">
-          {t('Made with love', 'प्यार से बनाया गया')}
-          <Heart className="w-4 h-4 fill-current" style={{ color: 'var(--rose)' }} />
+          {t("Built with love, for love", "प्यार के लिए, प्यार से")}
+          <Heart
+            className="w-4 h-4 fill-current"
+            style={{ color: "var(--rose)" }}
+          />
         </p>
 
         {/* Ornament */}
