@@ -23,10 +23,10 @@ export function Gallery() {
             className="text-5xl md:text-6xl font-bold text-gradient mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t('Gallery', 'गैलरी')}
+            {t('Our Moments', 'हमारे पल')}
           </h2>
           <p className="text-lg opacity-70">
-            {t('Moments to cherish forever', 'यादों को संजोएं')}
+            {t('The best is yet to come', 'अभी और भी बाकी है')}
           </p>
         </motion.div>
 
@@ -60,14 +60,14 @@ export function Gallery() {
             className="text-3xl md:text-4xl font-bold text-gradient mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t('Photos Coming Soon', 'तस्वीरें जल्द आएंगी')}
+            {t('Watch This Space', 'तस्वीरें आने वाली हैं')}
           </h3>
 
           {/* Description */}
           <p className="text-lg opacity-70 mb-8 max-w-2xl mx-auto">
             {t(
-              'Our wedding photos will be available here soon. Check back after the celebration!',
-              'हमारी शादी की तस्वीरें जल्द ही यहाँ उपलब्ध होंगी। समारोह के बाद वापस देखें!'
+              'All the candid moments, big laughs and happy tears — dropping here right after the wedding.',
+              'वो सारे खास पल, हँसी और आँसू — शादी के बाद यहाँ मिलेंगे।'
             )}
           </p>
 
@@ -82,14 +82,14 @@ export function Gallery() {
             }}
           >
             <ExternalLink className="w-6 h-6" />
-            {t('View Photos', 'तस्वीरें देखें')}
+            {t('Open Album', 'एल्बम खोलें')}
           </a>
 
           {/* Note */}
           <p className="text-sm opacity-50 mt-6 italic">
             {t(
-              '* Link will be active after the wedding',
-              '* लिंक शादी के बाद सक्रिय होगा'
+              '* Goes live after 19 April',
+              '* १९ अप्रैल के बाद लाइव होगा'
             )}
           </p>
         </motion.div>

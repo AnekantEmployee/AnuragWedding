@@ -61,12 +61,13 @@ export function Hero() {
           className="w-full h-full object-cover"
         />
         {/* Overlay with gradient - darker in light mode for better text contrast */}
-        <div 
+        <div
           className="absolute inset-0"
           style={{
-            background: theme === 'dark'
-              ? 'linear-gradient(135deg, rgba(139, 69, 69, 0.75), rgba(184, 134, 11, 0.75))'
-              : 'linear-gradient(135deg, rgba(20, 20, 30, 0.65), rgba(40, 30, 25, 0.65))',
+            background:
+              theme === "dark"
+                ? "linear-gradient(135deg, rgba(139, 69, 69, 0.75), rgba(184, 134, 11, 0.75))"
+                : "linear-gradient(135deg, rgba(20, 20, 30, 0.65), rgba(40, 30, 25, 0.65))",
           }}
         />
       </div>
@@ -78,26 +79,14 @@ export function Hero() {
           height="800"
           viewBox="0 0 200 200"
           className="opacity-[0.04] dark:opacity-[0.06]"
-          style={{ color: 'var(--rose)' }}
+          style={{ color: "var(--rose)" }}
         >
           {/* Mandala pattern */}
           <g transform="translate(100, 100)">
             {[...Array(8)].map((_, i) => (
               <g key={i} transform={`rotate(${i * 45})`}>
-                <ellipse
-                  cx="0"
-                  cy="-40"
-                  rx="15"
-                  ry="30"
-                  fill="currentColor"
-                />
-                <ellipse
-                  cx="0"
-                  cy="-60"
-                  rx="8"
-                  ry="15"
-                  fill="currentColor"
-                />
+                <ellipse cx="0" cy="-40" rx="15" ry="30" fill="currentColor" />
+                <ellipse cx="0" cy="-60" rx="8" ry="15" fill="currentColor" />
               </g>
             ))}
             <circle cx="0" cy="0" r="20" fill="currentColor" />
@@ -105,7 +94,6 @@ export function Hero() {
           </g>
         </svg>
       </div>
-
 
       <motion.div
         variants={container}
@@ -119,7 +107,7 @@ export function Hero() {
           className="text-lg md:text-xl mb-8 opacity-80"
           style={{ fontFamily: "'Jost', sans-serif" }}
         >
-          {t("With the blessings of our families", "परिवार के आशीर्वाद से")}
+          {t("With the blessings of our families", "प्रभु की असीम अनुकम्पा से")}
         </motion.p>
 
         {/* Names */}
@@ -136,7 +124,10 @@ export function Hero() {
         <motion.div variants={item} className="my-8">
           <p
             className="text-3xl md:text-4xl font-medium"
-            style={{ color: 'var(--gold)', fontFamily: "'Cormorant Garamond', serif" }}
+            style={{
+              color: "var(--gold)",
+              fontFamily: "'Cormorant Garamond', serif",
+            }}
           >
             {t("weds", "संग")}
           </p>
@@ -155,7 +146,10 @@ export function Hero() {
         <motion.p
           variants={item}
           className="text-2xl md:text-3xl mb-12 tracking-widest"
-          style={{ color: 'var(--gold)', fontFamily: "'Cormorant Garamond', serif" }}
+          style={{
+            color: "var(--gold)",
+            fontFamily: "'Cormorant Garamond', serif",
+          }}
         >
           {t("19 · April · 2026", "१९ · अप्रैल · २०२६")}
         </motion.p>
@@ -166,10 +160,10 @@ export function Hero() {
           className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-3xl mx-auto"
         >
           {[
-            { value: countdown.days, label: t('Days', 'दिन') },
-            { value: countdown.hours, label: t('Hours', 'घंटे') },
-            { value: countdown.minutes, label: t('Minutes', 'मिनट') },
-            { value: countdown.seconds, label: t('Seconds', 'सेकंड') },
+            { value: countdown.days, label: t("Days", "दिन") },
+            { value: countdown.hours, label: t("Hours", "घंटे") },
+            { value: countdown.minutes, label: t("Minutes", "मिनट") },
+            { value: countdown.seconds, label: t("Seconds", "सेकंड") },
           ].map((unit, index) => (
             <div key={index} className="card-glass p-6">
               <div
@@ -178,7 +172,9 @@ export function Hero() {
               >
                 {unit.value}
               </div>
-              <div className="text-sm md:text-base mt-2 opacity-70">{unit.label}</div>
+              <div className="text-sm md:text-base mt-2 opacity-70">
+                {unit.label}
+              </div>
             </div>
           ))}
         </motion.div>
@@ -191,8 +187,11 @@ export function Hero() {
         transition={{ delay: 1.5, duration: 0.8 }}
         className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float"
       >
-        <a href="#events" className="flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity">
-          <span className="text-sm">{t('Scroll', 'स्क्रॉल')}</span>
+        <a
+          href="#events"
+          className="flex flex-col items-center gap-2 opacity-60 hover:opacity-100 transition-opacity"
+        >
+          <span className="text-sm">{t("Scroll", "स्क्रॉल")}</span>
           <ChevronDown className="w-6 h-6" />
         </a>
       </motion.div>

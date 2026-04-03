@@ -24,10 +24,10 @@ export function Couple() {
             className="text-5xl md:text-6xl font-bold text-gradient mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t('The Couple', 'युगल')}
+            {t('Anurag & Shweta', 'अनुराग & श्वेता')}
           </h2>
           <p className="text-lg opacity-70">
-            {t('Two hearts united in love', 'प्यार में एक हुए दो दिल')}
+            {t('Beginning forever, together', 'एक नई शुरुआत, साथ-साथ')}
           </p>
         </motion.div>
 
@@ -64,7 +64,7 @@ export function Couple() {
               >
                 Anurag
               </h3>
-              <p className="text-lg opacity-70">{t('The Groom', 'दूल्हा')}</p>
+              <p className="text-lg opacity-70">{t('Groom', 'दूल्हा')}</p>
             </div>
           </motion.div>
 
@@ -99,7 +99,7 @@ export function Couple() {
               >
                 Shweta
               </h3>
-              <p className="text-lg opacity-70">{t('The Bride', 'दुल्हन')}</p>
+              <p className="text-lg opacity-70">{t('Bride', 'दुल्हन')}</p>
             </div>
           </motion.div>
         </div>

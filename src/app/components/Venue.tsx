@@ -24,10 +24,10 @@ export function Venue() {
             className="text-5xl md:text-6xl font-bold text-gradient mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t('Venue', 'स्थान')}
+            {t("Find Us", "पता")}
           </h2>
           <p className="text-lg opacity-70">
-            {t('Where our story begins', 'जहाँ हमारी कहानी शुरू होती है')}
+            {t("Come, celebrate with us", "आइए, साथ जश्न मनाएं")}
           </p>
         </motion.div>
 
@@ -47,7 +47,10 @@ export function Venue() {
               className="w-full h-full object-cover"
             />
             {/* Dark overlay */}
-            <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.45)' }} />
+            <div
+              className="absolute inset-0"
+              style={{ background: "rgba(0,0,0,0.45)" }}
+            />
             {/* Venue name overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
               <h3
@@ -67,10 +70,10 @@ export function Venue() {
               height="100%"
               style={{
                 border: 0,
-                filter: 'saturate(0.8) hue-rotate(320deg)',
+                filter: "saturate(0.8) hue-rotate(320deg)",
               }}
               loading="lazy"
-              title={t('Dastoor Garden Location', 'दास्तूर गार्डन का स्थान')}
+              title={t("Dastoor Garden Location", "दास्तूर गार्डन का स्थान")}
             />
           </div>
 
@@ -78,16 +81,19 @@ export function Venue() {
           <div className="p-6 md:p-8">
             {/* Venue Name with Icon */}
             <div className="flex items-start gap-3 mb-6">
-              <MapPin className="w-6 h-6 flex-shrink-0 mt-1" style={{ color: 'var(--rose)' }} />
+              <MapPin
+                className="w-6 h-6 flex-shrink-0 mt-1"
+                style={{ color: "var(--rose)" }}
+              />
               <div>
                 <h3
                   className="text-3xl font-bold text-gradient mb-2"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
-                  Dastoor Garden
+                  Dastoor Marriage Garden
                 </h3>
                 <p className="text-lg opacity-80">
-                  {t('Indore, Madhya Pradesh', 'इंदौर, मध्य प्रदेश')}
+                  {t("Indore, Madhya Pradesh", "इंदौर, मध्य प्रदेश")}
                 </p>
               </div>
             </div>
@@ -100,11 +106,12 @@ export function Venue() {
                 rel="noopener noreferrer"
                 className="flex-1 px-6 py-3 rounded-full text-center font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2"
                 style={{
-                  background: 'linear-gradient(135deg, var(--rose), var(--gold))',
+                  background:
+                    "linear-gradient(135deg, var(--rose), var(--gold))",
                 }}
               >
                 <MapPin className="w-5 h-5" />
-                {t('Get Directions', 'दिशा निर्देश')}
+                {t("Take Me There", "रास्ता दिखाओ")}
               </a>
 
               <a
@@ -114,7 +121,7 @@ export function Venue() {
                 className="flex-1 px-6 py-3 rounded-full text-center font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 card-glass"
               >
                 <ExternalLink className="w-5 h-5" />
-                {t('View Venue', 'स्थान देखें')}
+                {t("Explore Venue", "गार्डन देखें")}
               </a>
             </div>
           </div>

@@ -19,8 +19,8 @@ const events = [
     icon: Leaf,
     color: "#b5c99a",
     desc: {
-      en: "Where hands bloom with henna art",
-      hi: "जहाँ हाथों पर मेहंदी खिलती है",
+      en: "An evening of colour, music & intricate artistry",
+      hi: "रंग, संगीत और कला की एक शाम",
     },
     image: img2,
   },
@@ -31,8 +31,8 @@ const events = [
     icon: Landmark,
     color: "#c97b84",
     desc: {
-      en: "Seeking divine blessings on this sacred Jain darshan day",
-      hi: "इस पवित्र जैन दर्शन दिवस पर दिव्य आशीर्वाद की प्राप्ति",
+      en: "Blessings sought before the journey begins",
+      hi: "सफर शुरू होने से पहले आशीर्वाद",
     },
     image: img7,
   },
@@ -42,7 +42,7 @@ const events = [
     time: { en: "10:00 AM - 12:00 PM", hi: "१०:०० - १२:०० पूर्वाह्न" },
     icon: Sparkles,
     color: "#c9a96e",
-    desc: { en: "Two hearts, one promise", hi: "दो दिल, एक वादा" },
+    desc: { en: "Rings exchanged, forever sealed", hi: "अंगूठियाँ बदलीं, रिश्ता पक्का" },
     image: img3,
   },
   {
@@ -52,8 +52,8 @@ const events = [
     icon: Flower2,
     color: "#e8b84b",
     desc: {
-      en: "Golden blessings & joyful smiles",
-      hi: "सुनहरा आशीर्वाद और खुशी",
+      en: "Turmeric, laughter & a little bit of chaos",
+      hi: "हल्दी, हँसी और थोड़ी शरारत",
     },
     image: img6,
   },
@@ -64,8 +64,8 @@ const events = [
     icon: Flame,
     color: "#e07860",
     desc: {
-      en: "Seven circles around sacred fire",
-      hi: "पवित्र अग्नि के सात फेरे",
+      en: "Seven pheras. A lifetime of vows.",
+      hi: "सात फेरे। एक उम्र के वादे।",
     },
     image: img4,
   },
@@ -75,7 +75,7 @@ const events = [
     time: { en: "7:00 PM - 11:00 PM", hi: "७:०० - ११:०० रात" },
     icon: PartyPopper,
     color: "#9b8ecf",
-    desc: { en: "Celebrate love with us", hi: "हमारे साथ प्यार का जश्न मनाएं" },
+    desc: { en: "The night we dance it all in", hi: "वो रात जब सब नाचेंगे" },
     image: img5,
   },
 ];
@@ -110,10 +110,10 @@ export function Events() {
             className="text-5xl md:text-6xl font-bold text-gradient mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t('Wedding Events', 'विवाह समारोह')}
+            {t('Celebrations', 'उत्सव')}
           </h2>
           <p className="text-lg opacity-70">
-            {t('Join us in celebrating our special moments', 'हमारे विशेष पलों में शामिल हों')}
+            {t('Every ritual, every memory — save the dates', 'हर रस्म, हर पल — तारीखें याद रखें')}
           </p>
         </motion.div>
 
