@@ -241,6 +241,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
+  padding: 0.25em 0 0.2em;
 }
 
 .card-glass {
