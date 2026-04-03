@@ -22,7 +22,7 @@ export function Footer() {
           className="text-5xl md:text-6xl font-bold italic text-gradient mb-4"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          Anurag & Sweta
+          Anurag & Shweta
         </h3>
 
         {/* Date */}

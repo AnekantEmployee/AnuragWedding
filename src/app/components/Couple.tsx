@@ -78,7 +78,7 @@ export function Couple() {
               {/* TODO: replace with real photo */}
               <img
                 src="https://images.unsplash.com/photo-1595156596223-c5c9c49a84c0?w=600&q=80"
-                alt="Sweta"
+                alt="Shweta"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
               <div 
@@ -95,7 +95,7 @@ export function Couple() {
                 className="text-4xl font-bold text-gradient mb-2"
                 style={{ fontFamily: "'Cormorant Garamond', serif" }}
               >
-                Sweta
+                Shweta
               </h3>
               <p className="text-lg opacity-70">{t('The Bride', 'दुल्हन')}</p>
             </div>
