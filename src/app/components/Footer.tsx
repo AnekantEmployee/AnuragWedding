@@ -9,7 +9,7 @@ export function Footer() {
   const { t } = useTheme();
 
   return (
-    <footer className="py-16 px-4 relative">
+    <footer className="py-16 px-4">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -17,90 +17,46 @@ export function Footer() {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto text-center"
       >
-        {/* Names */}
         <h3
-          className="text-5xl md:text-6xl font-bold italic text-gradient mb-4"
+          className="text-5xl md:text-6xl font-bold italic mb-4 section-title"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
           Anurag & Shweta
         </h3>
 
-        {/* Date */}
         <p
           className="text-2xl mb-6 tracking-wider"
-          style={{
-            color: "var(--gold)",
-            fontFamily: "'Cormorant Garamond', serif",
-          }}
+          style={{ color: "#6a8a78", fontFamily: "'Cormorant Garamond', serif" }}
         >
           {t("19 · April · 2026", "19 · अप्रैल · 2026")}
         </p>
 
-        {/* Quote */}
         <p
-          className="text-xl md:text-2xl italic mb-8 opacity-80"
-          style={{ fontFamily: "'Cormorant Garamond', serif" }}
+          className="text-xl md:text-2xl italic mb-8"
+          style={{ color: "#6a8a78", fontFamily: "'Cormorant Garamond', serif" }}
         >
-          {t(
-            '"And so the adventure begins."',
-            '"और अब एक नया सफर शुरू होता है।"',
-          )}
+          {t('"And so the adventure begins."', '"और अब एक नया सफर शुरू होता है।"')}
         </p>
 
-        {/* Divider */}
-        <div
-          className="w-32 h-px mx-auto mb-6"
-          style={{ background: "var(--border)" }}
-        />
+        <div className="sage-divider w-32 mx-auto mb-6" />
 
-        {/* Venue Credit */}
-        <p className="text-sm opacity-60 mb-3">
+        <p className="text-sm mb-3" style={{ color: "#6a8a78" }}>
           {t("Venue:", "स्थान:")}{" "}
           <a
             href="https://maps.app.goo.gl/cq28nmGoaeTPfH1SA"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:opacity-100 transition-opacity underline"
-            style={{ color: "var(--rose)" }}
+            className="underline hover:opacity-80 transition-opacity"
+            style={{ color: "#4a6358" }}
           >
             Dastoor Marriage Garden, Indore
           </a>
         </p>
 
-        {/* Made with love */}
-        <p className="text-sm opacity-60 flex items-center justify-center gap-2">
+        <p className="text-sm flex items-center justify-center gap-2" style={{ color: "#6a8a78" }}>
           {t("Built with love, for love", "प्यार के लिए, प्यार से")}
-          <Heart
-            className="w-4 h-4 fill-current"
-            style={{ color: "var(--rose)" }}
-          />
+          <Heart className="w-4 h-4 fill-current" style={{ color: "#a8c5b5" }} />
         </p>
-
-        {/* Ornament */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="mt-8"
-        >
-          <svg
-            width="60"
-            height="30"
-            viewBox="0 0 60 30"
-            fill="none"
-            className="mx-auto"
-          >
-            <path
-              d="M30 5 L35 10 Q37.5 12.5 40 10 L45 5 M30 5 L25 10 Q22.5 12.5 20 10 L15 5"
-              stroke="var(--gold)"
-              strokeWidth="1.5"
-              fill="none"
-              opacity="0.5"
-            />
-            <circle cx="30" cy="7.5" r="2.5" fill="var(--rose)" opacity="0.6" />
-          </svg>
-        </motion.div>
       </motion.div>
     </footer>
   );

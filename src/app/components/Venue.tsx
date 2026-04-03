@@ -1,18 +1,17 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'motion/react';
-import { MapPin, ExternalLink } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
-import gardenBg from '../images/garden_3d_-ujvxw.jpg';
+import React from "react";
+import { motion } from "motion/react";
+import { MapPin, ExternalLink } from "lucide-react";
+import { useTheme } from "../contexts/ThemeContext";
+import gardenBg from "../images/garden_3d_-ujvxw.jpg";
 
 export function Venue() {
-  const { t, theme } = useTheme();
+  const { t } = useTheme();
 
   return (
-    <section id="venue" className="py-20 px-4 relative">
+    <section id="venue" className="py-20 px-4">
       <div className="max-w-5xl mx-auto">
-        {/* Section Title */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -21,17 +20,17 @@ export function Venue() {
           className="text-center mb-12"
         >
           <h2
-            className="text-5xl md:text-6xl font-bold text-gradient mb-4"
+            className="text-5xl md:text-6xl font-bold mb-4 section-title"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
             {t("Find Us", "पता")}
           </h2>
-          <p className="text-lg opacity-70">
+          <div className="sage-divider w-24 mx-auto mb-4" />
+          <p style={{ color: "#6a8a78" }}>
             {t("Come, celebrate with us", "आइए, साथ जश्न मनाएं")}
           </p>
         </motion.div>
 
-        {/* Venue Card */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -39,23 +38,18 @@ export function Venue() {
           transition={{ duration: 0.8 }}
           className="card-glass overflow-hidden"
         >
-          {/* Venue Banner Image */}
+          {/* Banner */}
           <div className="relative h-[200px] w-full overflow-hidden">
             <img
               src={gardenBg}
               alt="Dastoor Marriage Garden, Indore"
               className="w-full h-full object-cover"
             />
-            {/* Dark overlay */}
-            <div
-              className="absolute inset-0"
-              style={{ background: "rgba(0,0,0,0.45)" }}
-            />
-            {/* Venue name overlay */}
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0" style={{ background: "rgba(74,99,88,0.55)" }} />
+            <div className="absolute inset-0 flex items-center justify-center px-4">
               <h3
-                className="text-5xl md:text-6xl font-bold italic text-white drop-shadow-lg"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                className="text-3xl md:text-5xl font-bold italic text-center"
+                style={{ color: "#fafaee", fontFamily: "'Cormorant Garamond', serif" }}
               >
                 Dastoor Marriage Garden, Indore
               </h3>
@@ -68,59 +62,50 @@ export function Venue() {
               src="https://maps.google.com/maps?q=Dastoor+Garden+Indore&z=15&output=embed"
               width="100%"
               height="100%"
-              style={{
-                border: 0,
-                filter: "saturate(0.8) hue-rotate(320deg)",
-              }}
+              style={{ border: 0, filter: "saturate(0.7) hue-rotate(60deg)" }}
               loading="lazy"
               title={t("Dastoor Garden Location", "दास्तूर गार्डन का स्थान")}
             />
           </div>
 
-          {/* Venue Info */}
+          {/* Info */}
           <div className="p-6 md:p-8">
-            {/* Venue Name with Icon */}
             <div className="flex items-start gap-3 mb-6">
-              <MapPin
-                className="w-6 h-6 flex-shrink-0 mt-1"
-                style={{ color: "var(--rose)" }}
-              />
+              <MapPin className="w-5 h-5 flex-shrink-0 mt-1" style={{ color: "#a8c5b5" }} />
               <div>
                 <h3
-                  className="text-3xl font-bold text-gradient mb-2"
+                  className="text-3xl font-bold mb-1 section-title"
                   style={{ fontFamily: "'Cormorant Garamond', serif" }}
                 >
                   Dastoor Marriage Garden
                 </h3>
-                <p className="text-lg opacity-80">
+                <p style={{ color: "#6a8a78" }}>
                   {t("Indore, Madhya Pradesh", "इंदौर, मध्य प्रदेश")}
                 </p>
               </div>
             </div>
 
-            {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a
                 href="https://maps.app.goo.gl/cq28nmGoaeTPfH1SA"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 px-6 py-3 rounded-full text-center font-medium text-white transition-all duration-300 hover:scale-105 hover:shadow-lg flex items-center justify-center gap-2"
-                style={{
-                  background:
-                    "linear-gradient(135deg, var(--rose), var(--gold))",
-                }}
+                className="flex-1 px-6 py-3 rounded-full text-center font-medium flex items-center justify-center gap-2 transition-colors duration-200"
+                style={{ background: "#a8c5b5", color: "#fafaee" }}
+                onMouseEnter={e => (e.currentTarget.style.background = "#8aad9d")}
+                onMouseLeave={e => (e.currentTarget.style.background = "#a8c5b5")}
               >
-                <MapPin className="w-5 h-5" />
+                <MapPin className="w-4 h-4" />
                 {t("Take Me There", "रास्ता दिखाओ")}
               </a>
-
               <a
                 href="https://www.dastoorgarden.com/garden"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex-1 px-6 py-3 rounded-full text-center font-medium transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 card-glass"
+                className="flex-1 px-6 py-3 rounded-full text-center font-medium flex items-center justify-center gap-2 transition-colors duration-200"
+                style={{ background: "#f5efb8", color: "#4a6358", border: "1px solid #a8c5b5" }}
               >
-                <ExternalLink className="w-5 h-5" />
+                <ExternalLink className="w-4 h-4" />
                 {t("Explore Venue", "गार्डन देखें")}
               </a>
             </div>
