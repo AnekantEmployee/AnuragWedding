@@ -1,9 +1,9 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'motion/react';
-import { Heart } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
+import React from "react";
+import { motion } from "motion/react";
+import { Heart } from "lucide-react";
+import { useTheme } from "../contexts/ThemeContext";
 
 export function Footer() {
   const { t } = useTheme();
@@ -41,7 +41,10 @@ export function Footer() {
           className="text-xl md:text-2xl italic mb-8 opacity-80"
           style={{ fontFamily: "'Cormorant Garamond', serif" }}
         >
-          {t('"And so the adventure begins."', '"और अब एक नया सफर शुरू होता है।"')}
+          {t(
+            '"And so the adventure begins."',
+            '"और अब एक नया सफर शुरू होता है।"',
+          )}
         </p>
 
         {/* Divider */}

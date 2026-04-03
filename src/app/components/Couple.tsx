@@ -1,10 +1,10 @@
 "use client";
 
-import React from 'react';
-import { motion } from 'motion/react';
-import { useTheme } from '../contexts/ThemeContext';
-import groomImg from '../images/groom.jpg';
-import brideImg from '../images/bride.jpg';
+import React from "react";
+import { motion } from "motion/react";
+import { useTheme } from "../contexts/ThemeContext";
+import groomImg from "../images/groom.jpg";
+import brideImg from "../images/bride.jpg";
 
 export function Couple() {
   const { t, theme } = useTheme();
@@ -24,10 +24,10 @@ export function Couple() {
             className="text-5xl md:text-6xl font-bold text-gradient mb-4"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t('Anurag & Shweta', 'अनुराग & श्वेता')}
+            {t("Anurag & Shweta", "अनुराग & स्वेता")}
           </h2>
           <p className="text-lg opacity-70">
-            {t('Beginning forever, together', 'एक नई शुरुआत, साथ-साथ')}
+            {t("Beginning forever, together", "एक नई शुरुआत, साथ-साथ")}
           </p>
         </motion.div>
 
@@ -48,12 +48,13 @@ export function Couple() {
                 alt="Anurag"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div 
+              <div
                 className="absolute inset-0 bg-gradient-to-t opacity-60"
-                style={{ 
-                  background: theme === 'dark' 
-                    ? 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)' 
-                    : 'linear-gradient(to top, rgba(0,0,0,0.4), transparent)' 
+                style={{
+                  background:
+                    theme === "dark"
+                      ? "linear-gradient(to top, rgba(0,0,0,0.8), transparent)"
+                      : "linear-gradient(to top, rgba(0,0,0,0.4), transparent)",
                 }}
               />
             </div>
@@ -64,7 +65,7 @@ export function Couple() {
               >
                 Anurag
               </h3>
-              <p className="text-lg opacity-70">{t('Groom', 'दूल्हा')}</p>
+              <p className="text-lg opacity-70">{t("Groom", "दूल्हा")}</p>
             </div>
           </motion.div>
 
@@ -83,12 +84,13 @@ export function Couple() {
                 alt="Shweta"
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
               />
-              <div 
+              <div
                 className="absolute inset-0 bg-gradient-to-t opacity-60"
-                style={{ 
-                  background: theme === 'dark' 
-                    ? 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)' 
-                    : 'linear-gradient(to top, rgba(0,0,0,0.4), transparent)' 
+                style={{
+                  background:
+                    theme === "dark"
+                      ? "linear-gradient(to top, rgba(0,0,0,0.8), transparent)"
+                      : "linear-gradient(to top, rgba(0,0,0,0.4), transparent)",
                 }}
               />
             </div>
@@ -99,7 +101,7 @@ export function Couple() {
               >
                 Shweta
               </h3>
-              <p className="text-lg opacity-70">{t('Bride', 'दुल्हन')}</p>
+              <p className="text-lg opacity-70">{t("Bride", "दुल्हन")}</p>
             </div>
           </motion.div>
         </div>

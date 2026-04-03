@@ -1,9 +1,9 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import { motion } from 'motion/react';
-import { ChevronDown } from 'lucide-react';
-import { useTheme } from '../contexts/ThemeContext';
+import React, { useEffect, useState } from "react";
+import { motion } from "motion/react";
+import { ChevronDown } from "lucide-react";
+import { useTheme } from "../contexts/ThemeContext";
 
 export function Hero() {
   const { t, theme } = useTheme();
@@ -15,7 +15,7 @@ export function Hero() {
   });
 
   useEffect(() => {
-    const targetDate = new Date('2026-04-19T10:00:00+05:30').getTime();
+    const targetDate = new Date("2026-04-19T10:00:00+05:30").getTime();
 
     const updateCountdown = () => {
       const now = new Date().getTime();
@@ -24,7 +24,9 @@ export function Hero() {
       if (distance > 0) {
         setCountdown({
           days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-          hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+          hours: Math.floor(
+            (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
+          ),
           minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
           seconds: Math.floor((distance % (1000 * 60)) / 1000),
         });
