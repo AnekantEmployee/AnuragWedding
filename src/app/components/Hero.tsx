@@ -167,14 +167,28 @@ export function Hero() {
             { value: countdown.minutes, label: t("Minutes", "मिनट") },
             { value: countdown.seconds, label: t("Seconds", "सेकंड") },
           ].map((unit, index) => (
-            <div key={index} className="card-glass p-6">
+            <div key={index} className="relative card-glass p-6 overflow-hidden group">
+              {/* Decorative corner accents */}
+              <span className="absolute top-2 left-2 w-3 h-3 border-t border-l opacity-40" style={{ borderColor: 'var(--gold)' }} />
+              <span className="absolute top-2 right-2 w-3 h-3 border-t border-r opacity-40" style={{ borderColor: 'var(--gold)' }} />
+              <span className="absolute bottom-2 left-2 w-3 h-3 border-b border-l opacity-40" style={{ borderColor: 'var(--gold)' }} />
+              <span className="absolute bottom-2 right-2 w-3 h-3 border-b border-r opacity-40" style={{ borderColor: 'var(--gold)' }} />
+              {/* Glow bg */}
+              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                style={{ background: 'radial-gradient(ellipse at center, rgba(184,134,11,0.12) 0%, transparent 70%)' }}
+              />
               <div
-                className="text-4xl md:text-5xl font-bold text-gradient"
-                style={{ fontFamily: "'Cormorant Garamond', serif" }}
+                className="text-5xl md:text-6xl font-light text-gradient tabular-nums"
+                style={{ fontFamily: "'Jost', sans-serif", letterSpacing: '0.08em' }}
               >
-                {unit.value}
+                {String(unit.value).padStart(2, '0')}
               </div>
-              <div className="text-sm md:text-base mt-2 opacity-70">
+              {/* Divider */}
+              <div className="w-8 h-px mx-auto my-2 opacity-40" style={{ background: 'var(--gold)' }} />
+              <div
+                className="text-xs uppercase tracking-[0.2em] opacity-70"
+                style={{ fontFamily: "'Jost', sans-serif", color: 'var(--gold)' }}
+              >
                 {unit.label}
               </div>
             </div>
