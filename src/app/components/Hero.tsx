@@ -113,7 +113,7 @@ export function Hero() {
         </motion.p>
 
         {/* Names */}
-        <motion.div variants={item} className="mb-6">
+        <motion.div variants={item} className="mb-3">
           <h1
             className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold italic text-gradient leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -123,7 +123,7 @@ export function Hero() {
         </motion.div>
 
         {/* Weds */}
-        <motion.div variants={item} className="my-8">
+        <motion.div variants={item} className="">
           <p
             className="text-3xl md:text-4xl font-medium"
             style={{
@@ -135,7 +135,7 @@ export function Hero() {
           </p>
         </motion.div>
 
-        <motion.div variants={item} className="mb-12">
+        <motion.div variants={item} className="">
           <h1
             className="text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold italic text-gradient leading-tight"
             style={{ fontFamily: "'Cormorant Garamond', serif" }}
@@ -147,7 +147,7 @@ export function Hero() {
         {/* Date */}
         <motion.p
           variants={item}
-          className="text-2xl md:text-3xl mb-12 tracking-widest"
+          className="text-2xl md:text-3xl mb-6 tracking-widest"
           style={{
             color: "var(--gold)",
             fontFamily: "'Cormorant Garamond', serif",
