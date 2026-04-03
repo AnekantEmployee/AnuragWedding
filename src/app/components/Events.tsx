@@ -1,6 +1,4 @@
 "use client";
-
-import React from 'react';
 import { motion } from 'motion/react';
 import { Leaf, Landmark, Sparkles, Flower2, Flame, PartyPopper } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
@@ -14,7 +12,7 @@ import img7 from '../images/Image (7).jpg';
 const events = [
   {
     name: { en: "Mehndi", hi: "मेहंदी" },
-    date: { en: "17 April, Thursday", hi: "१७ अप्रैल, गुरुवार" },
+    date: { en: "17 April, Thursday", hi: "17 अप्रैल, गुरुवार" },
     time: { en: "Evening", hi: "शाम" },
     icon: Leaf,
     color: "#b5c99a",
@@ -26,7 +24,7 @@ const events = [
   },
   {
     name: { en: "Devdarshan & Arga", hi: "देवदर्शन & अरगा" },
-    date: { en: "18 April, Friday", hi: "१८ अप्रैल, शुक्रवार" },
+    date: { en: "18 April, Friday", hi: "18 अप्रैल, शुक्रवार" },
     time: { en: "Evening", hi: "शाम" },
     icon: Landmark,
     color: "#c97b84",
@@ -38,8 +36,8 @@ const events = [
   },
   {
     name: { en: "Ring Ceremony", hi: "अंगूठी समारोह" },
-    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
-    time: { en: "10:00 AM - 12:00 PM", hi: "१०:०० - १२:०० पूर्वाह्न" },
+    date: { en: "19 April, Sunday", hi: "19 अप्रैल, रविवार" },
+    time: { en: "10:00 AM - 12:00 PM", hi: "10:00 AM - 12:00 PM" },
     icon: Sparkles,
     color: "#c9a96e",
     desc: { en: "Rings exchanged, forever sealed", hi: "अंगूठियाँ बदलीं, रिश्ता पक्का" },
@@ -47,8 +45,8 @@ const events = [
   },
   {
     name: { en: "Haldi", hi: "हल्दी" },
-    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
-    time: { en: "1:00 PM - 3:00 PM", hi: "१:०० - ३:०० अपराह्न" },
+    date: { en: "19 April, Sunday", hi: "19 अप्रैल, रविवार" },
+    time: { en: "1:00 PM - 3:00 PM", hi: "1:00 PM - 3:00 PM" },
     icon: Flower2,
     color: "#e8b84b",
     desc: {
@@ -59,8 +57,8 @@ const events = [
   },
   {
     name: { en: "Bhavar", hi: "भाँवर" },
-    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
-    time: { en: "3:30 PM - 6:00 PM", hi: "३:३० - ६:०० अपराह्न" },
+    date: { en: "19 April, Sunday", hi: "19 अप्रैल, रविवार" },
+    time: { en: "3:30 PM - 6:00 PM", hi: "3:30 PM - 6:00 PM" },
     icon: Flame,
     color: "#e07860",
     desc: {
@@ -71,8 +69,8 @@ const events = [
   },
   {
     name: { en: "Reception", hi: "स्वागत समारोह" },
-    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
-    time: { en: "7:00 PM - 11:00 PM", hi: "७:०० - ११:०० रात" },
+    date: { en: "19 April, Sunday", hi: "19 अप्रैल, रविवार" },
+    time: { en: "7:00 PM - 11:00 PM", hi: "7:00 PM - 11:00 PM" },
     icon: PartyPopper,
     color: "#9b8ecf",
     desc: { en: "The night we dance it all in", hi: "वो रात जब सब नाचेंगे" },

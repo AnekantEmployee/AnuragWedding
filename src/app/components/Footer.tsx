@@ -33,7 +33,7 @@ export function Footer() {
             fontFamily: "'Cormorant Garamond', serif",
           }}
         >
-          {t("19 · April · 2026", "१९ · अप्रैल · २०२६")}
+          {t("19 · April · 2026", "19 · अप्रैल · 2026")}
         </p>
 
         {/* Quote */}

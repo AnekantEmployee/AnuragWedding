@@ -89,7 +89,7 @@ export function Gallery() {
           <p className="text-sm opacity-50 mt-6 italic">
             {t(
               '* Goes live after 19 April',
-              '* १९ अप्रैल के बाद लाइव होगा'
+              '* 19 अप्रैल के बाद लाइव होगा'
             )}
           </p>
         </motion.div>
