@@ -106,24 +106,6 @@ export function Hero() {
         </svg>
       </div>
 
-      {/* Ornament SVG at top */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.8 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1, ease: "easeOut" }}
-        className="absolute top-24 left-1/2 -translate-x-1/2"
-      >
-        <svg width="120" height="60" viewBox="0 0 120 60" fill="none">
-          <path
-            d="M60 5 L70 15 Q75 20 80 15 L90 5 M60 5 L50 15 Q45 20 40 15 L30 5"
-            stroke="var(--rose)"
-            strokeWidth="2"
-            fill="none"
-            opacity="0.6"
-          />
-          <circle cx="60" cy="10" r="4" fill="var(--gold)" opacity="0.8" />
-        </svg>
-      </motion.div>
 
       <motion.div
         variants={container}

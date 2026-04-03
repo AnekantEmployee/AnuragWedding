@@ -2,63 +2,81 @@
 
 import React from 'react';
 import { motion } from 'motion/react';
-import { Leaf, Music, Sparkles, Flower2, Flame, PartyPopper } from 'lucide-react';
+import { Leaf, Landmark, Sparkles, Flower2, Flame, PartyPopper } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+import img2 from '../images/Image (2).jpg';
+import img3 from '../images/Image (3).jpg';
+import img4 from '../images/Image (4).jpg';
+import img5 from '../images/Image (5).jpg';
+import img6 from '../images/Image (6).jpg';
+import img7 from '../images/Image (7).jpg';
 
 const events = [
   {
-    name: { en: 'Mehndi', hi: 'मेहंदी' },
-    date: { en: '17 April, Thursday', hi: '१७ अप्रैल, गुरुवार' },
-    time: { en: 'Evening', hi: 'शाम' },
+    name: { en: "Mehndi", hi: "मेहंदी" },
+    date: { en: "17 April, Thursday", hi: "१७ अप्रैल, गुरुवार" },
+    time: { en: "Evening", hi: "शाम" },
     icon: Leaf,
-    color: '#b5c99a',
-    desc: { en: 'Where hands bloom with henna art', hi: 'जहाँ हाथों पर मेहंदी खिलती है' },
-    image: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80', // TODO: Replace with real event photo
+    color: "#b5c99a",
+    desc: {
+      en: "Where hands bloom with henna art",
+      hi: "जहाँ हाथों पर मेहंदी खिलती है",
+    },
+    image: img2,
   },
   {
-    name: { en: 'Sangeet', hi: 'संगीत' },
-    date: { en: '18 April, Friday', hi: '१८ अप्रैल, शुक्रवार' },
-    time: { en: 'Evening', hi: 'शाम' },
-    icon: Music,
-    color: '#c97b84',
-    desc: { en: 'A night of music, dance & celebration', hi: 'संगीत, नृत्य और उत्सव की रात' },
-    image: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80', // TODO: Replace with real event photo
+    name: { en: "Devdarshan & Arga", hi: "देवदर्शन & अरगा" },
+    date: { en: "18 April, Friday", hi: "१८ अप्रैल, शुक्रवार" },
+    time: { en: "Evening", hi: "शाम" },
+    icon: Landmark,
+    color: "#c97b84",
+    desc: {
+      en: "Seeking divine blessings on this sacred Jain darshan day",
+      hi: "इस पवित्र जैन दर्शन दिवस पर दिव्य आशीर्वाद की प्राप्ति",
+    },
+    image: img7,
   },
   {
-    name: { en: 'Ring Ceremony', hi: 'अंगूठी समारोह' },
-    date: { en: '19 April, Sunday', hi: '१९ अप्रैल, रविवार' },
-    time: { en: '10:00 AM - 12:00 PM', hi: '१०:०० - १२:०० पूर्वाह्न' },
+    name: { en: "Ring Ceremony", hi: "अंगूठी समारोह" },
+    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
+    time: { en: "10:00 AM - 12:00 PM", hi: "१०:०० - १२:०० पूर्वाह्न" },
     icon: Sparkles,
-    color: '#c9a96e',
-    desc: { en: 'Two hearts, one promise', hi: 'दो दिल, एक वादा' },
-    image: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80', // TODO: Replace with real event photo
+    color: "#c9a96e",
+    desc: { en: "Two hearts, one promise", hi: "दो दिल, एक वादा" },
+    image: img3,
   },
   {
-    name: { en: 'Haldi', hi: 'हल्दी' },
-    date: { en: '19 April, Sunday', hi: '१९ अप्रैल, रविवार' },
-    time: { en: '1:00 PM - 3:00 PM', hi: '१:०० - ३:०० अपराह्न' },
+    name: { en: "Haldi", hi: "हल्दी" },
+    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
+    time: { en: "1:00 PM - 3:00 PM", hi: "१:०० - ३:०० अपराह्न" },
     icon: Flower2,
-    color: '#e8b84b',
-    desc: { en: 'Golden blessings & joyful smiles', hi: 'सुनहरा आशीर्वाद और खुशी' },
-    image: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80', // TODO: Replace with real event photo
+    color: "#e8b84b",
+    desc: {
+      en: "Golden blessings & joyful smiles",
+      hi: "सुनहरा आशीर्वाद और खुशी",
+    },
+    image: img6,
   },
   {
-    name: { en: 'Bhavar', hi: 'भाँवर' },
-    date: { en: '19 April, Sunday', hi: '१९ अप्रैल, रविवार' },
-    time: { en: '3:30 PM - 6:00 PM', hi: '३:३० - ६:०० अपराह्न' },
+    name: { en: "Bhavar", hi: "भाँवर" },
+    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
+    time: { en: "3:30 PM - 6:00 PM", hi: "३:३० - ६:०० अपराह्न" },
     icon: Flame,
-    color: '#e07860',
-    desc: { en: 'Seven circles around sacred fire', hi: 'पवित्र अग्नि के सात फेरे' },
-    image: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80', // TODO: Replace with real event photo
+    color: "#e07860",
+    desc: {
+      en: "Seven circles around sacred fire",
+      hi: "पवित्र अग्नि के सात फेरे",
+    },
+    image: img4,
   },
   {
-    name: { en: 'Reception', hi: 'स्वागत समारोह' },
-    date: { en: '19 April, Sunday', hi: '१९ अप्रैल, रविवार' },
-    time: { en: '7:00 PM - 11:00 PM', hi: '७:०० - ११:०० रात' },
+    name: { en: "Reception", hi: "स्वागत समारोह" },
+    date: { en: "19 April, Sunday", hi: "१९ अप्रैल, रविवार" },
+    time: { en: "7:00 PM - 11:00 PM", hi: "७:०० - ११:०० रात" },
     icon: PartyPopper,
-    color: '#9b8ecf',
-    desc: { en: 'Celebrate love with us', hi: 'हमारे साथ प्यार का जश्न मनाएं' },
-    image: 'https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=80', // TODO: Replace with real event photo
+    color: "#9b8ecf",
+    desc: { en: "Celebrate love with us", hi: "हमारे साथ प्यार का जश्न मनाएं" },
+    image: img5,
   },
 ];
 
@@ -125,7 +143,7 @@ export function Events() {
                       <img
                         src={event.image}
                         alt={t(event.name.en, event.name.hi)}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-cover" style={{ objectPosition: '50% 20%' }}
                       />
                       {/* Overlay gradient */}
                       <div 

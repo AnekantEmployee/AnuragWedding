@@ -4,6 +4,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { MapPin, ExternalLink } from 'lucide-react';
 import { useTheme } from '../contexts/ThemeContext';
+import gardenBg from '../images/garden_3d_-ujvxw.jpg';
 
 export function Venue() {
   const { t, theme } = useTheme();
@@ -41,17 +42,12 @@ export function Venue() {
           {/* Venue Banner Image */}
           <div className="relative h-[200px] w-full overflow-hidden">
             <img
-              src="https://images.unsplash.com/photo-1478146896981-b80fe463b330?w=1200&q=80"
+              src={gardenBg}
               alt="Dastoor Marriage Garden, Indore"
               className="w-full h-full object-cover"
             />
-            {/* Rose overlay */}
-            <div 
-              className="absolute inset-0"
-              style={{
-                background: 'linear-gradient(135deg, rgba(139, 69, 69, 0.3), rgba(184, 134, 11, 0.2))',
-              }}
-            />
+            {/* Dark overlay */}
+            <div className="absolute inset-0" style={{ background: 'rgba(0,0,0,0.45)' }} />
             {/* Venue name overlay */}
             <div className="absolute inset-0 flex items-center justify-center">
               <h3
