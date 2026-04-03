@@ -138,7 +138,7 @@ export function Hero() {
             className="text-3xl md:text-4xl font-medium"
             style={{ color: 'var(--gold)', fontFamily: "'Cormorant Garamond', serif" }}
           >
-            {t("weds", "विवाह")}
+            {t("weds", "संग")}
           </p>
         </motion.div>
 
