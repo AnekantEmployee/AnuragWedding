@@ -21,33 +21,22 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [lang, setLang] = useState<Language>('en');
 
   useEffect(() => {
-    // Load from localStorage
-    const savedTheme = localStorage.getItem('wedding-theme') as Theme;
-    const savedLang = localStorage.getItem('wedding-lang') as Language;
-    
-    if (savedTheme) {
-      setTheme(savedTheme);
-      document.documentElement.classList.toggle('dark', savedTheme === 'dark');
-    }
-    
-    if (savedLang) {
-      setLang(savedLang);
-    }
-    
+    // Always default to light mode and English — clear any stale saved values
+    localStorage.removeItem('wedding-theme');
+    localStorage.removeItem('wedding-lang');
+    document.documentElement.classList.remove('dark');
     setMounted(true);
   }, []);
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     setTheme(newTheme);
-    localStorage.setItem('wedding-theme', newTheme);
     document.documentElement.classList.toggle('dark', newTheme === 'dark');
   };
 
   const toggleLang = () => {
     const newLang = lang === 'en' ? 'hi' : 'en';
     setLang(newLang);
-    localStorage.setItem('wedding-lang', newLang);
   };
 
   const t = (en: string, hi: string) => {
