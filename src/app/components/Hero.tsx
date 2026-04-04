@@ -53,7 +53,7 @@ export function Hero() {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://images.unsplash.com/photo-1606216794074-735e91aa2c92?w=1920&q=80"
+          src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?w=1920&q=80"
           alt="Wedding background"
           className="w-full h-full object-cover"
         />
