@@ -12,7 +12,7 @@ import img7 from "../images/Image (7).jpg";
 const events = [
   {
     name: { en: "Mehndi",              hi: "मेहंदी"           },
-    date: { en: "17 April, Thursday",  hi: "17 अप्रैल, गुरुवार" },
+    date: { en: "17 April, Friday",  hi: "17 अप्रैल, शुक्रवार" },
     time: { en: "Evening",             hi: "शाम"              },
     icon: Leaf,
     desc: { en: "An evening of colour, music & intricate artistry", hi: "रंग, संगीत और कला की एक शाम" },
@@ -20,7 +20,7 @@ const events = [
   },
   {
     name: { en: "Devdarshan & Arga",   hi: "देवदर्शन & अरगा"  },
-    date: { en: "18 April, Friday",    hi: "18 अप्रैल, शुक्रवार" },
+    date: { en: "18 April, Saturday",    hi: "18 अप्रैल, शनिवार" },
     time: { en: "Evening",             hi: "शाम"              },
     icon: Landmark,
     desc: { en: "Blessings sought before the journey begins", hi: "सफर शुरू होने से पहले आशीर्वाद" },
